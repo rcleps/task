@@ -1,0 +1,13 @@
+logging.level.org.apache.tomcat: INFO
+logging.level.root: INFO
+server:
+  port: 8090
+  tomcat:
+    accesslog:
+      enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+  api-docs:
+    path: /api-docs
