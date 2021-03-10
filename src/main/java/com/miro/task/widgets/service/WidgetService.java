@@ -22,12 +22,10 @@ public class WidgetService {
 
     private final Lock reentrantLock;
     private final Lock readLock;
-    private final Lock writeLock;
 
     @Autowired
     public WidgetService() {
         ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
-        this.writeLock = readWriteLock.writeLock();
         this.readLock = readWriteLock.readLock();
         this.reentrantLock = new ReentrantLock();
     }
