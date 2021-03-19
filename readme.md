@@ -1,4 +1,4 @@
-# Miro task
+# Task
 
 ## Run
 ```
